@@ -1,0 +1,110 @@
+:root {
+    --body-background: #252525;
+    --login-background: white; 
+    --button-color: rgb(43, 43, 173);
+    --font-title: black;
+    --font-text: #9f9f9f ;
+    --font-button: white;
+    --sm: 1rem;
+    --md: 1.6rem;
+    --lg: 2.3rem;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@keyframes pan {
+    100% { background-position: 50% 15%; }
+  }  
+
+body {
+    background-color: var(--body-background);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('/images/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:
+      pan 3s infinite alternate ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main__login {
+    min-width: 350px;
+    padding: 0 1vw;
+    border-radius: 15px;
+    background-color: var(--login-background);
+    text-align: center;
+}
+
+.main__login h1 {
+    font-size: var(--lg);
+    margin-top: 8vh;
+}
+
+.main__login > p:first-of-type {
+    color: var(--font-text);
+    margin: 2% 0 6% 0;
+    font-size: var(--sm);
+}
+
+.main__login__input input {
+    height: 35px;
+    width: 95%;
+    margin: 2% 0;
+    padding: 3%;
+    border:  1px solid rgb(200, 200, 200);
+    font-size: var(--sm);
+}
+
+.main__login p:last-of-type {
+    text-align:left;
+    margin: 2% 3% 5%;
+}
+
+.main__login a {
+    text-decoration: none;
+    text-align: left;
+}
+
+.main__login button {
+    height: 35px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--font-button);
+    font-size: var(--sm);
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 5vh;
+}
+
+@media (min-width: 400px) {
+    .main__login {
+        min-width: unset;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 90%;
+    }
+}
