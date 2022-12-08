@@ -1,4 +1,4 @@
-# Login oage
+# Login page
 
 This is my Login Page template. This template is simple and only has HTML and JS
 
