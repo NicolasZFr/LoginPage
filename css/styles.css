@@ -34,7 +34,7 @@ main {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    background-image: url('/images/layered-waves-haikei.svg');
+    background-image: url('./layered-waves-haikei.svg');
     background-repeat: no-repeat;
     background-size: cover;
     animation:
