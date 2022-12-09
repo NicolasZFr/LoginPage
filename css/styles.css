@@ -83,7 +83,7 @@ main {
     text-align: left;
 }
 
-.main__login button {
+.button {
     height: 35px;
     width: 95%;
     border: none;
@@ -95,6 +95,20 @@ main {
     letter-spacing: 1px;
     cursor: pointer;
     margin-bottom: 5vh;
+}
+
+.wrong-password img {
+    height: 1rem;
+}
+
+.wrong-password p {
+    display: inline-block;
+    margin-top: 0;
+    color: red;
+}
+
+.inactive {
+    display: none;
 }
 
 @media (min-width: 400px) {
